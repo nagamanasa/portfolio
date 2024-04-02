@@ -73,3 +73,31 @@ button:hover {
 button:focus {
     outline: none;
 }
+
+/* ... existing styles ... */
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 8px; /* Or whatever padding you prefer */
+    z-index: 1000; /* Ensures the bar is above other content */
+}
+
+/* #grid-menu { 
+    background-size: cover;
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+} 
+*/
+
+#user-profile img {
+    width: 32px; /* Size of your profile image */
+    height: 32px; /* Size of your profile image */
+    border-radius: 50%;
+    display: block;
+}
