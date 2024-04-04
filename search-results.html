@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results</title>
+    <title>Naga Manasa Palaparthi - Portfolio</title>
     <link rel="stylesheet" href="search-results.css">
 </head>
+
 <body>
     <header>
+        <!-- Header content -->
         <div id="top-bar">
             <img src="images/logo.png" alt="Google" id="logo">
             <div id="search-area">
                 <input type="text" id="search-bar" value="Naga Manasa Palaparthi">
                 <button id="search-button">🔍</button>
             </div>
-            <div id="top-bar-right">
-                <!-- Other top bar items like sign in, grid menu, etc. -->
-            </div>
         </div>
         <div id="options-bar">
-            <!-- Search options like All, Images, Videos, etc. -->
+            <!-- Options content -->
+            <a href="#" class="option-link active">All</a>
+            <a href="#" class="option-link">Professional Experience</a>
+            <a href="#" class="option-link">Projects</a>
+            <a href="#" class="option-link">Linkedin</a>
+            <a href="#" class="option-link">Leetcode</a>
+            <a href="#" class="option-link">Github</a>
         </div>
     </header>
+    
     <main>
         <section id="results-section">
-            <!-- Your results will go here -->
+            <article class="search-result-card">
+                <h3 class="result-title">Senior Software Developer at XYZ Corp</h3>
+                <p class="result-url">www.xyzcorporation.com</p>
+                <p class="result-snippet">Developed multiple high-profile enterprise applications using modern JavaScript frameworks. Specialized in full-stack development and cloud technologies.</p>
+                <div class="result-meta">
+                    <span class="result-date">Jan 2020 - Present</span>
+                    <span class="result-location">Los Angeles, CA</span>
+                </div>
+            </article>
         </section>
-        <aside id="sidebar">
-            <!-- Sidebar content such as "See results about" card goes here -->
-        </aside>
     </main>
+    
+    <aside id="sidebar">
+        <!-- Sidebar content -->
+        <div id="profile-card">
+            <img src="images/user_profile.jpg" alt="Naga Manasa Palaparthi" id="profile-picture" />
+            <h2>About</h2>
+            <p>Short bio or other information about Naga Manasa Palaparthi...</p>
+            <!-- ... -->
+        </div>
+    </aside>
+    
+    <script src="script.js"></script>
 </body>
 </html>
