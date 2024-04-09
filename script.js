@@ -1,25 +1,18 @@
-document.getElementById('search-button').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    var searchButton = document.getElementById('search-button');
+    var luckyButton = document.getElementById('lucky-button');
     var searchBar = document.getElementById('search-bar');
-    var name = 'Naga Manasa Palaparthi'; // Replace with your name
 
-    if(searchBar.value.toLowerCase() === name.toLowerCase()) {
-        // Logic when your name is entered. For example, display the portfolio.
-        // alert('Displaying portfolio!');
-        window.location.href = 'search-results.html';
-    } else {
-        // Logic when the name is not entered. For example, do nothing or alert the user.
-        alert('Please type "Naga Manasa Palaparthi"');
-    }
+    searchButton.addEventListener('click', function() {
+        var query = searchBar.value.trim();
+        if(query.toLowerCase() === 'naga manasa palaparthi') {
+            window.location.href = 'search-results.html';
+        } else {
+            alert('Please type "Naga Manasa Palaparthi" to see the portfolio.');
+        }
+    });
+
+    luckyButton.addEventListener('click', function() {
+        alert("Redirecting to a featured project!");
+    });
 });
-
-document.getElementById('lucky-button').addEventListener('click', function() {
-    // Logic for the "I'm Feeling Lucky" button
-    alert("I'm Feeling Lucky clicked!");
-});
-
-// Prefill the search bar with your name and select it
-window.onload = function() {
-    var searchBar = document.getElementById('search-bar');
-    searchBar.value = 'Naga Manasa Palaparthi';
-    searchBar.select();
-};
