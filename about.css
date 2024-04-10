@@ -1,5 +1,5 @@
 body, html {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     padding: 10px;
 }
@@ -55,7 +55,7 @@ body, html {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    /* box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); */
 
 }
 
@@ -66,8 +66,10 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     margin-bottom: 20px;
+    margin-left: 5rem;
     display: flex;
     flex-direction: column;
+    
 }
 
 .information-card .profile-pic {
@@ -114,7 +116,8 @@ body, html {
 
 .main-container {
     padding-left: 0; /* Removes padding from the left */
-    margin-left: 11rem; /* Removes margin from the left */
+    margin-left: 0; /* 11rem Removes margin from the left */
+    max-width:fit-content;
 }
 /* ... existing styles ... */
 
@@ -122,6 +125,7 @@ body, html {
     border: none; /* Remove the default border */
     border-radius: 0; /* No border radius for a flat design */
     padding: .75rem 1.25rem; /* Standard padding around the content */
+    max-width: 90;
 }   
 
 /* Remove the default list group link styling */
@@ -163,10 +167,11 @@ body, html {
     border: none; /* Remove default card border */
 }
 
+
 #peopleAlsoAsk .card-header {
     background-color: #f8f9fa;
     border-bottom: 1px solid #e0e0e0;
-    padding-left: 20px; /* Aligns text a bit off the edge */
+    padding-left: 20px; /*Aligns text a bit off the edge*/
 }
 
 #peopleAlsoAsk .btn-link {
